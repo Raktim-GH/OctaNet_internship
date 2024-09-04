@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#top {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/08/09/10/dawn-3208158_960_720.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+#overlay {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#text {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  padding: 0 10vw;
+  justify-content: space-between;
+  color: #3a34ea;
+}
+
+#textright {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#textright p {
+  font-size: 16px;
+  font-weight: 500;
+  width: 30%;
+  
+}
+
+#textright i {
+  color: rgb(253, 246, 32);
+}
+
+#text h1 {
+  font-weight: 500;
+  font-size: 6vw;
+}
+
+#bottom {
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgb(48, 160, 150);
+  display: flex;
+}
+
+#b_one {
+  width: 25%;
+  min-height: inherit;
+  background-color: rgb(184, 165, 165);
+  padding: 30px;
+}
+
+#b_one p{
+  font-size: 12px;
+  margin-top: 20px;
+  color: black;
+}
+
+#b_one  p{
+  font-size: 12px;
+}
+
+#b_one h2{
+  font-weight: 500;
+  color: black;
+  font-style:oblique;
+}
+
+#b_two {
+  width: 25%;
+  min-height: inherit;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/02/23/44/bmw-1368280_960_720.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#b_three {
+  width: 20%;
+  min-height: inherit;
+  background-color: rgb(237, 96, 53);
+}
+
+#b_three_top {
+  width: 100%;
+  min-height: 20vh;
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg);
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+#b_three_bottom {
+  width: 100%;
+  min-height: 20vh;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/08/09/50/car-1723359_960_720.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+#b_four {
+  width: 30%;
+  min-height: inherit;
+  background-color: #876d6d;
+  color: #fff;
+  padding: 40px;
+}
+
+#b_four h2{
+  font-weight: 500;
+  color: black;
+  font-style:oblique;
+}
+
+.notf {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.notf #photo1 {
+  width: 40px;
+  height: 40px;
+  background-image: url(https://img.freepik.com/free-photo/3d-view-letters-alphabet_23-2150499120.jpg?w=996&t=st=1725448052~exp=1725448652~hmac=e46e8e0866a2de6a76b00fb2efc760ff8678fe48256ebadc3499c0b4213ac590);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.notf #photo2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(https://imgs.search.brave.com/DtVYDxPpWOXvh2RiVws7Jh7uq3Cfddx3UH4nuRUsekY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbmNy/eXB0ZWQtdGJuMC5n/c3RhdGljLmNvbS9p/bWFnZXM_cT10Ym46/QU5kOUdjU0F4NHlT/RmxsZmJ6S0tKMnI5/ckR4S3k2Zkl4ZmZE/cldpXzF3JnVzcXA9/Q0FV);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.notf p {
+  width: 86%;
+  font-size: 20px;
+  padding-left: 15px;
+  align-content: center;
+  color: rgb(6, 6, 6);
+  font-weight: 500;
+}
+
+
+
+@media(max-width: 500px){
+  #overlay #text{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #text h1{
+    font-size: 10vw;
+  }
+
+  #bottom{
+    min-height: 20vh;
+  }
+
+  #overlay #text #textright{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #overlay #text #textright p{
+    width: initial;
+    margin-top: 20px;
+
+  }
+
+  #overlay #text #textright icon{
+    margin-top: 30px;
+
+  }
+
+  #bottom{
+    flex-direction: column;
+
+  }
+  #b_one{
+    width: 100%;
+  }
+  #b_two{
+    width: 100%;
+    min-height: 30vh;
+  }
+  #b_three{
+    flex-direction: column;
+    width: 100%;
+    min-height: 30vh;
+  }
+  #b_four{
+    width: 100%;
+  }
+
+  
+
+
+
+
+}
